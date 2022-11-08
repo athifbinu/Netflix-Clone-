@@ -1,0 +1,77 @@
+.banner{
+    background-image: url('https://images4.alphacoders.com/982/982360.jpg');
+    background-size: cover;
+    height: 440px;
+    color: #fff;
+    
+
+  
+
+}
+
+.content{
+    padding-top: 140px;
+    height: 190px;
+    margin-left: 110px;
+
+}
+.mane-content{
+    margin-top: 90px;
+}
+.tittle{
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 0.3rem;
+    font-family: sans-serif;
+    
+ 
+
+}
+.banner_buttons{
+    gap: 10px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.button{
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51,51, 51, .5);
+    cursor: pointer;
+    margin-right: 1rem;
+    
+}
+.button:hover{
+    opacity: 1;
+    cursor: pointer;
+    background-color: #DD0004; 
+    box-shadow:0 0 5px #DD0004,
+               0 0 20px #DD0004,
+               0 0 60px #DD0004,
+               0 0 150px #DD0004;
+
+}
+.discription{
+    font-family: sans-serif;
+    width: 45rem;
+    line-height:1.3;
+    padding-top: 1rem;
+    height: 80px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: -30px;
+    max-width: 390px;
+}
+.fade{
+    height: 7.4rem;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+
+
+}

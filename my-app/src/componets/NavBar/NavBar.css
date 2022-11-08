@@ -6,17 +6,20 @@
     display: flex;
     justify-content: space-between;
     background-color: #111;
+    
 
 }
 
 .logo{
     position: fixed;
-    left: 20px;
-    width: 80px;
+    left: 30px;
+    width: 100px;
+    margin-top: 25px;
     
 }
 .avatar{
     position: fixed;
-    right: 20px;
+    right: 25px;
     width: 30px;
+    margin-top: 25px;
 }
