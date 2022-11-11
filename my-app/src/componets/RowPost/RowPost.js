@@ -21,31 +21,39 @@ function RowPost(props) {
     width: '100%',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      autoplay: 0,
+      autoplay: 1,
     },
   };
+
   const handleMove=(id)=>{
           console.log(id)
           axios.get(`/movie/${id}/videos?api_key=${API_KEY}&language=en-US`).then(responce=>{
-
             console.log(responce.data)
+            if(responce.data.results.length!==0){
+                setUrlId(responce.data.results[0])
+            }else{
+              console.log('empty array')
+            }
           })
           
   }
   return (
+  
     <div className='row'>
-      <h2>{props.tittle}</h2>
-
+      
+       <h2 className='text' >{props.tittle}</h2>
+       
       <div className="posters">
         {movies.map((obj)=>
 
-        <img onClick={()=>handleMove(obj.id)} className={props.isSmall ?'smallPosters':'poster'} alt='poster'  src={`${imageUrl+obj.backdrop_path}`}  />
+        <img id='post' onClick={()=>handleMove(obj.id)} className={props.isSmall ?'smallPosters':'poster'} alt='poster'  src={`${imageUrl+obj.backdrop_path}`}  />
         )}
 
      
 
       </div>
-      <YouTube opts={opts} videoId="2g811Eo7K8U" />
+     {urlId && <YouTube opts={opts} videoId={urlId.key} />}
+     
     </div>
   )
 }

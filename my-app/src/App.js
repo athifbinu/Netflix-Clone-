@@ -7,7 +7,7 @@ import './componets/Banner/Bannner.css'
 import RowPost from "./componets/RowPost/RowPost";
 
 //urls
-import { actions, comedy, trending } from "./componets/urls";
+import { actions, comedy, Documentrys, romance, trending } from "./componets/urls";
 import { orginals } from "./componets/urls";
 
 
@@ -22,6 +22,8 @@ function App() {
         <RowPost url={actions} tittle="Action Movies" isSmall/>
         <RowPost url={trending} tittle="Trending Movies" isSmall/>
         <RowPost url={comedy} tittle="Comedy Movies" isSmall/>
+        <RowPost url={romance} tittle="Romance Movies" isSmall/>
+        <RowPost url={Documentrys} tittle="Documentrys" isSmall/>
      
      </div>
   );

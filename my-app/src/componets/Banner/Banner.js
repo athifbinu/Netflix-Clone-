@@ -9,7 +9,8 @@ function Banner() {
     //to fetch data using axios get method
       axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((res)=>{
         console.log(res.data.results)
-        SetMovie(res.data.results[14])
+        SetMovie(res.data.results[10])
+      
       
       })
       

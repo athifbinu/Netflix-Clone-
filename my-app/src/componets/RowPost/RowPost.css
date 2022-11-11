@@ -3,6 +3,7 @@
     color: #fff;
     overflow-x: scroll;
     overflow-y: hidden;
+  
 
 }
 .row::-webkit-scrollbar{
@@ -15,11 +16,20 @@
     height: 200px;
     gap: 15px;
     margin-right: 10px;
+    cursor: pointer;
+   
+    
 
 }
 .smallPosters{
     max-height: 150px;
+    cursor: pointer;
      
 }
+#post:hover{
+    transform:scale(1.20) ;
+}
+
+
 
 
