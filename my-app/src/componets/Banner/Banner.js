@@ -11,7 +11,7 @@ function Banner() {
         console.log(res.data.results)
         SetMovie(res.data.results[5])
       
-      
+        
       })
       
   },[])
@@ -38,7 +38,7 @@ function Banner() {
      </div>
    
      <div className="fade">
-
+             
      </div>
       
     </div>
